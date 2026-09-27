@@ -79,15 +79,13 @@ h5 {
   color: #606060;
 }
 
-/* ── Responsive: stack profile section nicely on narrow screens ── */
+/* ── Responsive: keep the profile photo centered on narrow screens ──
+   The container stays inline-block (shrink-wrapped to the image) so the
+   absolutely-positioned hover photo lines up exactly over the base photo.
+   Centering comes from the parent's text-align: center. ── */
 @media (max-width: 750px) {
   .photo-container {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .photo {
+    display: inline-block;
     margin: 0 auto;
   }
 }
